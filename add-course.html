@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+        Add Course Page - Personal Courses Organizer
+        Super simple form for my course tracker 😊
+        Internet Technology Assignment - April 2026
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Veronia">
+    <meta name="description" content="Add new course to the organizer">
+    <title>Add New Course - Personal Organizer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">📚 Personal Courses Organizer</h1>
+            <nav aria-label="Main Navigation">
+                <ul>
+                    <li><a href="index.html">🏠 Home</a></li>
+                    <li><a href="courses.html">📋 My Courses</a></li>
+                    <li><a href="add-course.html" class="active">➕ Add Course</a></li>
+                    <li><a href="contact.html">📧 Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h2>➕ Add New Course</h2>
+                <p class="subtitle">Use the form below to add a new course</p>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <div class="container">
+                <form class="course-form">
+                    
+                    <div class="form-group">
+                        <label for="courseName">
+                            Course Name * 
+                            <span class="example">(e.g., Internet Technology)</span>
+                        </label>
+                        <input type="text" id="courseName" name="courseName" 
+                               placeholder="Enter course name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="instructor">
+                            Instructor * 
+                            <span class="example">(e.g., Dr. Mahmoud El-Khouly)</span>
+                        </label>
+                        <input type="text" id="instructor" name="instructor" 
+                               placeholder="Enter instructor name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="credits">
+                            Credit Hours * 
+                            <span class="example">(1–6 credits)</span>
+                        </label>
+                        <input type="number" id="credits" name="credits" 
+                               min="1" max="6" placeholder="3" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="notes">
+                            📝 Notes * 
+                            <span class="example">(e.g., Lecture Sun, Lab Wed)</span>
+                        </label>
+                        <textarea id="notes" name="notes" rows="4" 
+                            placeholder="Add lecture times, exam dates, or notes..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        ✅ Add Course
+                    </button>
+                </form>
+                
+                <div class="form-help">
+                    <p><small>💡 Tip: Adding notes helps keep track of important course details.</small></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Personal Courses Organizer 💻 | Internet Technology Project</p>
+        </div>
+    </footer>
+</body>
+</html>
